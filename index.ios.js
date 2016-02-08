@@ -11,8 +11,12 @@ import React, {
   View
 } from 'react-native';
 
+const GoogleAnalytics = require('react-native-google-analytics-bridge');
+
 class rn019 extends Component {
   render() {
+    GoogleAnalytics.trackScreenView('test');
+
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
